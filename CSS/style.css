@@ -1,0 +1,55 @@
+/* resetting the html */
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+.text{
+    background-color: orange;
+    text-align: center;
+    width: 600px;
+}
+/* .text h1{text-align: center;} */
+.text .title{
+    display: inline-block;
+    border: 2px solid blue;
+    width: 300px;
+}
+.title span{color: blue;}
+.text .para{display: inline;}
+
+.text a{border: 2px solid blue;}
+.text .link1{display: block;}
+
+.image{border: 2px solid red;}
+.image img{width: 500px;}
+
+.container .title{
+    color: blue;
+    width: 200px;
+    border: 2px solid orange;
+    padding: 10px 20px;
+    margin: 10px 0px;
+    transition: color 2s, border 1s 2s ease;
+}
+.container .title:hover{
+    color: chartreuse;
+    border: 2px solid black;
+}
+
+.text-field{
+    outline: none;
+}
+.text-field:focus{
+    outline: 2px solid black;
+    border-radius: 4px;
+}
+/* box shadow */
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: cadetblue;
+    margin: 10px;
+    transition: 1s ease;
+}
+.box:hover{
+    box-shadow: 0px 0px 7px 5px orange;
+    transform: scale(1.1);
+}
