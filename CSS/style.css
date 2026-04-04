@@ -1,6 +1,23 @@
 /* resetting the html */
 *{margin: 0; padding: 0; box-sizing: border-box;}
 
+/* navbar */
+.navbar{
+    background-color: black;
+    color: white;
+    margin-bottom: 20px;
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* cross-axis alignment */
+    align-items: center;
+    /* main-axis alignment / spacing */
+    justify-content: space-between;
+}
+
+
+
 .text{
     background-color: orange;
     text-align: center;

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{margin: 0; padding: 0; box-sizing: border-box;}
+        body{font-family: Arial, Helvetica, sans-serif;}
+        .navbar{
+            background-color: black;
+            color: white;
+            padding: 7px 10px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .nav-title span{color: goldenrod;}
+        .nav-menu{
+            display: flex;
+            gap: 10px;
+        }
+        .nav-menu a{
+            color: white;
+            text-decoration: none;
+        }
+        .navbar .nav-btn{
+            color: black;
+            text-decoration: none;
+            padding: 7px 10px;
+            background-color: goldenrod;
+            font-weight: 500;
+            border-radius: 5px;
+        }
+        /* hero section */
+        .hero{
+            background-color: rgb(107, 106, 106);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .hero .content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px 0px;
+        }
+        /* services section */
+        .services{
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .services .cards-container{
+            display: grid;
+            /* grid-template-columns: auto auto auto auto; */
+            grid-template-columns: repeat(4, 1fr);
+            gap: 5px;
+        }
+        .cards-container .card{
+            border: 2px solid goldenrod;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- navbar -->
+        <div class="navbar">
+            <h1 class="nav-title">My<span>Website</span></h1>
+            <nav class="nav-menu">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+            </nav>
+            <a href="#" class="nav-btn">Get in touch</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- hero -->
+        <section class="hero">
+            <div class="content">
+                <h1 class="title">Welcome to your Flexbox Webpage</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio eligendi alias nemo porro vero molestiae</p>
+                <div>
+                    <button type="button">Explore More</button>
+                    <button type="button">Contact</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- services -->
+        <section class="services">
+            <div class="services-header">
+                <h1>Our Services</h1>
+                <p>Lorem ipsum dolor sit</p>
+            </div>
+            <div class="cards-container">
+                <!-- card 1 -->
+                <div class="card">
+                    <h2>Web Development</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quam mollitia
+                    </p>
+                </div>
+                <!-- card 2 -->
+                <div class="card">
+                    <h2>SEO</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quam mollitia
+                    </p>
+                </div>
+                <!-- card 3 -->
+                <div class="card">
+                    <h2>Cyber Security</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quam mollitia
+                    </p>
+                </div>
+                <!-- card 4 -->
+                <div class="card">
+                    <h2>CEH</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quam mollitia
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
