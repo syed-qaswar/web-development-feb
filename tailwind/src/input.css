@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+/* extending tailwindcss */
+
+@theme{
+    --color-primary: #e8eb34;
+}
